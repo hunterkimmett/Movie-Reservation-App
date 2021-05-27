@@ -698,7 +698,9 @@ public class FrontEndGUI {
 				for(Ticket t:fec.getCancel().getTrs().getTickets()) {
 					
 					if (t.getTicketID().equals(id)) {
-						Duration timeDiff = Duration.between(LocalDateTime.now(), t.getMovieOffering().getTime());
+						
+						LocalDateTime timeNow = LocalDateTime.parse("2012-12-01T12:00:00"); // LocalDateTime.now()
+						Duration timeDiff = Duration.between(timeNow, t.getMovieOffering().getTime());
 						double hours = timeDiff.toHours();
 						
 						if(hours<72){
@@ -1035,8 +1037,8 @@ public class FrontEndGUI {
 				DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm");
 				
 				for(Ticket t:user.getTicketList()) {
-					
-					Duration timeDiff = Duration.between(LocalDateTime.now(), t.getMovieOffering().getTime());
+					LocalDateTime timeNow = LocalDateTime.parse("2012-12-01T12:00:00"); // LocalDateTime.now()
+					Duration timeDiff = Duration.between(timeNow, t.getMovieOffering().getTime());
 					double hours = timeDiff.toHours();
 					
 					if(hours<72){

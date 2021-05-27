@@ -1,7 +1,0 @@
-Cost: 20.0	Credit Card: GUYFIERI	Name: gf@ddd.gov
-Cost: 10.0	Credit Card: GUYFIERI	Name: gf@ddd.gov
-Cost: 10.0	Credit Card: GUYFIERI	Name: gf@ddd.gov
-Cost: 10.0	Credit Card: a	Name: a
-Cost: 10.0	Credit Card: a	Name: a
-Cost: 10.0	Credit Card: a	Name: a
-Cost: 1.5	Credit Card: a	Name: a
